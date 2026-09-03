@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "MyVue Cinema Helper",
+  "version": "1.0.0",
+  "description": "A browser plugin which gives the true start times of cinema showings. Currently only functions on myvue.com.",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.myvue.com/cinema/*/whats-on"],
+      "js": ["dist/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "permissions": [
+    "https://www.myvue.com/*"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "",
+      "strict_min_version": "78.0"
+    }
+  }
+}
