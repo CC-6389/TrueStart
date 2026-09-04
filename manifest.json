@@ -18,8 +18,12 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "",
-      "strict_min_version": "78.0"
+      "id": "CC-6389@github.com",
+      "strict_min_version": "78.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   }
 }
+
